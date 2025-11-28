@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --white-color: #fff;
+  --dark-color: #252525;
+  --pimary-color: #3b141c;
+  --secondary-color: #f3961c;
+  --light-pink-color: #faf4f5;
+  --medium-gray-color: #ccc;
+}
+
+/* General styles  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+button,
+input,
+a {
+  cursor: pointer;
+}
+.hero-section {
+  background-color: var(--pimary-color);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: var(--white-color);
+  height: 100vh;
+  padding: 2rem;
+}
+.description {
+}
+.description h2 {
+  font-family: "miniver", sans-serif;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 1rem;
+}
+.description h3 {
+  width: full;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.description p {
+  width: full;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.description .btn {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-items: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.description button {
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  width: 10rem;
+}
+
+.description button:nth-child(1) {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .description {
+    max-width: 15rem;
+  }
+}
+/* ==========================Responsiveness for tablet =========================================== */
+@media screen and (min-width: 600px) and (max-width: 825px) {
+  .description {
+    max-width: 30rem;
+  }
+}
+/* ================dESKTOP==================== */
+@media screen and (min-width: 826px) {
+  .hero-section {
+    width: full;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
