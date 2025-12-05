@@ -94,18 +94,29 @@ a {
   padding: 3rem 1.5rem;
   text-align: center;
   gap: 1.5rem;
+  color: var(--dark-color);
+} 
+.About-us .img-cover{
+  width: 250px;
+height:250px;
 }
-
 .About-us img {
-  width: 90%;
-  max-width: 350px;
-}
+height: inherit;
+width: inherit;
+  border-radius: 120px;
 
-.About-us h2 {
-  font-family: "Miniver", sans-serif;
-  color: var(--pimary-color);
 }
-
+.about-description{
+  text-align: center;
+}
+.About-us h2::after{
+  content: "";
+  width: 4rem;
+  height: 3px;
+  display: block;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+}
 .About-us .a-text {
   max-width: 35rem;
   line-height: 1.6;
@@ -167,10 +178,7 @@ a {
     padding: 4rem 6rem;
   }
 
-  .About-us img {
-    max-width: 420px;
-  }
-
+  .About-us img 
   .About-us .a-text {
     max-width: 40%;
   }
