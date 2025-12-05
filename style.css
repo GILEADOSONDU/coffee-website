@@ -16,9 +16,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 button,
 input,
-a {
+a ,svg{
   cursor: pointer;
 }
 
@@ -95,18 +96,23 @@ a {
   text-align: center;
   gap: 1.5rem;
   color: var(--dark-color);
+  height: fit-content;
 }
 .About-us .img-cover {
-  width: 250px;
-  height: 250px;
+  width: 25rem;
+  height: 25rem;
 }
 .About-us img {
   height: inherit;
   width: inherit;
-  border-radius: 120px;
+  border-radius: 12rem;
 }
 .about-description {
   text-align: center;
+}
+.about-description h2{
+  margin-bottom: 3rem;
+
 }
 .About-us h2::after {
   content: "";
@@ -120,12 +126,24 @@ a {
   max-width: 35rem;
   line-height: 1.6;
 }
-
+.social-handle{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+  justify-content: center;
+  margin-top: 2rem;
+  color: var(--dark-color);
+}
+.social-handle li:hover{
+  color: var(--secondary-color);
+}
 /* ===============================MENU SECTION ================================ */
 .menu {
   background-color: #252525;
   font-family: "Poppins", sans-serif;
   padding: 2rem;
+  width: fit-content;
 }
 .menu h2 {
   text-align: center;
