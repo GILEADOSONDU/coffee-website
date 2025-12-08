@@ -22,6 +22,10 @@ input,
 a ,svg{
   cursor: pointer;
 }
+body{
+  width: full;
+  overflow-x: hidden;
+}
 
 /* ============================= HERO SECTION ============================= */
 
@@ -139,18 +143,18 @@ a ,svg{
   color: var(--secondary-color);
 }
 /* ===============================MENU SECTION ================================ */
-.menu {
+#menu {
   background-color: #252525;
   font-family: "Poppins", sans-serif;
-  padding: 2rem;
   width: fit-content;
 }
-.menu h2 {
+#menu h2 {
   text-align: center;
   color: white;
   text-transform: uppercase;
+  padding-top: 3rem;
 }
-.menu h2::after {
+#menu h2::after {
   content: "";
   display: block;
   width: 80px;
@@ -163,14 +167,25 @@ a ,svg{
 .product-listing {
   display: grid;
   color: white;
-  margin: 20px;
-  padding: 20px;
+  padding: 20px  2rem ;
   text-align: center;
   align-items: center;
+  width: 100vw;
+  margin: 0 auto;
+  place-content: center;
+  
+}
+.product-card{
+  width:min-content;
+      padding: 10px;
+    width: fit-content;
+}
+.product-card img {
+  align-self: center;
 }
 
 /*Mobile   Phones */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width:599px){
   .description .btn {
     flex-direction: column;
   }
@@ -190,7 +205,8 @@ a ,svg{
   /* Menu section */
   .product-listing {
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 3rem;
+    place-content: center;
   }
 }
 
