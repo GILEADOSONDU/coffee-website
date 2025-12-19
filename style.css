@@ -204,14 +204,12 @@ body {
 }
 .container-cover .testimony h3{
   font-size: 1.5rem;
-  margin-bottom: 5px;
+  margin-bottom: 5px; 
 }
 .Contact-us{
   display: flex;
   justify-content: space-between;
   background-color: aquamarine;
-  height: 400px;
-
 }
 .h2s
 {
@@ -231,7 +229,6 @@ body {
   .description .btn {
     flex-direction: column;
   }
-
   .description button {
     width: 100%;
   }
@@ -239,7 +236,7 @@ body {
 
 /* Tablets */
 @media screen and (min-width: 600px) and (max-width: 825px) {
-  .description h3,
+  .descriptio h3,
   .description p {
     max-width: 30rem;
   }
